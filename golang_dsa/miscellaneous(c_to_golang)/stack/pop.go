@@ -3,7 +3,7 @@ package stack
 import "fmt"
 
 func (s *Stack) Pop() int {
-	if is.IsEmpty() {
+	if s.IsEmpty() {
 		fmt.Println("Stack Underflow sarkaar ! Nothing to pop.")
 		return -1
 	}
