@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+
+	"github.com/Saugat-Tamang17/golang-dsa/Comparison/methods"
 )
 
 func main() {
@@ -9,7 +11,7 @@ func main() {
 
 	fmt.Println("Original:", arr)
 
-	fmt.Println("Bubble Sort:", sorting_methods.BubbleSort(arr))
-	fmt.Println("Selection Sort:", sorting_methods.SelectionSort(arr))
-	fmt.Println("Insertion Sort:", sorting_methods.InsertionSort(arr))
+	fmt.Println("Bubble Sort:", methods.BubbleSort(arr))
+	fmt.Println("Selection Sort:", methods.Selection(arr))
+	fmt.Println("Insertion Sort:", methods.Insertion(arr))
 }
