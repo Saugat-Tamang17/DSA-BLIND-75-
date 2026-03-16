@@ -1,4 +1,4 @@
-package l_queue
+package L_queue
 
 const MAX_SIZE = 100
 
