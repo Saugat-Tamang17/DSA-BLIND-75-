@@ -13,5 +13,5 @@ func main() {
 
 	fmt.Println("Bubble Sort:", methods.BubbleSort(arr))
 	fmt.Println("Selection Sort:", methods.Selection(arr))
-	fmt.Println("Insertion Sort:", methods.Insertion(arr))
+	fmt.Println("Insertion Sort:", methods.Insertion(arr)) 
 }
