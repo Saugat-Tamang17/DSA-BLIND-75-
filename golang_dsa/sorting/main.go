@@ -145,8 +145,27 @@ case 2:
 				
 		printComplexity(algo)
 
+		copyArr := make([]int, len(arr))
+	copy(copyArr, arr)
+ 
+	fmt.Printf("Original Array : %v\n", arr)
+ 
+	switch algo {
+	case "bubble":
+		fmt.Printf("Bubble Sort    : %v\n", methods.BubbleSort(copyArr))
+	case "selection":
+		fmt.Printf("Selection Sort : %v\n", methods.Selection(copyArr))
+	case "insertion":
+		fmt.Printf("Insertion Sort : %v\n", methods.Insertion(copyArr))
+	case "quicksort":
+		methods.QuickSort(copyArr, 0, len(copyArr)-1)
+		fmt.Printf("Quick Sort     : %v\n", copyArr)
+	case "mergesort":
+		result := methods.MergeSort(copyArr)
+		fmt.Printf("Merge Sort     : %v\n", result)
 	}
-	
+}
+
 
 
 
