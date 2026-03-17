@@ -11,10 +11,10 @@ func Partition(arr []int, low int, high int) int {
 	for j := low; j <= high-1; j++ {
 		if arr[j] < pivot {
 			i++
-			swap(arr, i, j)
+			Swap(arr, i, j)
 
 		}
 	}
-	swap(arr, i+1, high)
+	Swap(arr, i+1, high)
 	return i + 1
 }
