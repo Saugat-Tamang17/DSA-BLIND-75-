@@ -81,3 +81,73 @@ func getMethodChoice() int {
 	fmt.Scan(&n)
 	return choice
 }
+
+func getAlgorithmChoice(method int) string{
+case 1:
+	fmt.Println("You choosed the Sorting method (Sorting By Comparison)")
+	fmt.Println("Choose the desired algorithm")
+	fmt.Println(" 1. Bubble Sort")
+	fmt.Println(" 2. Selection Sort")
+	fmt.Println(" 3. Insertion Sort")
+	fmt.Println("Enter the choice (1-3):")
+	var choice int
+	fmt.Scan(&choice)
+
+	switch choice{
+	case 1:
+		return "bubble"
+	case 2:
+			return "selection"
+	case 3:
+			return "insertion"
+	default:
+			fmt.Println("Invalid choice, defaulting to Bubble Sort.")
+	return "bubble"
+	}
+
+case 2:
+	fmt.Println("You chose the sorting method ( By Divide&Conquer)")
+	fmt.Println("Choose the sorting algorithm:")
+	fmt.Println("  1. Quick Sort")
+	fmt.Println("  2. Merge Sort")
+	fmt.Print("Enter choice (1 or 2): ")
+		var choice int
+		fmt.Scan(&choice)
+ 
+		switch choice {
+		case 1:
+			return "quicksort"
+		case 2:
+			return "mergesort"
+		default:
+			fmt.Println("Invalid choice, defaulting to Quick Sort.")
+			return "quicksort"
+		}
+ 
+	default:
+		fmt.Println("Invalid category, defaulting to Bubble Sort.")
+		return "bubble"
+
+
+	}
+
+	func main(){
+		fmt.Println("--------------------------------------")
+		fmt.Println("Sorting Algorithms")
+		fmt.Println("=======================================")
+		arr :=getArray()
+
+		fmt.Println("\n original Array : %v\t",arr)
+
+		method:=getMethodChoice()
+
+		algo :=getAlgorithmChoice(method)
+				
+		printComplexity(algo)
+
+	}
+	
+
+
+
+
