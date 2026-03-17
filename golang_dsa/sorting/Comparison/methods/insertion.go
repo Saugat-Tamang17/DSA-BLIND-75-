@@ -1,0 +1,19 @@
+package methods
+
+func InsertionSort(arr []int) {
+	n := len(arr)
+
+	for i := 1; i < n; i++ {
+		key := arr[i]
+		j := i - 1
+
+		// Shift elements that are greater than key
+		for j >= 0 && arr[j] > key {
+			arr[j+1] = arr[j]
+			j--
+		}
+
+		// Place key at correct position
+		arr[j+1] = key
+	}
+}
