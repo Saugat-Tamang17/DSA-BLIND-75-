@@ -70,3 +70,14 @@ func getArray() []int{
 	return arr
 
 }
+
+func getMethodChoice() int {
+	fmt.Println("Choose the sorting method:\n")
+	fmt.Println("  1. Comparison Based  (Bubble, Selection, Insertion)")
+	fmt.Println("  2. Divide & Conquer  (Quick Sort, Merge Sort)")
+	fmt.Println("enter the choice ( 1 or 2 ): ")
+
+	var choice int
+	fmt.Scan(&n)
+	return choice
+}
